@@ -7,7 +7,7 @@ Membres :
 
 # Elements
 Entités :
-- Piece
+- IPiece
 - Square
 - Board play move(Move)
 - Color

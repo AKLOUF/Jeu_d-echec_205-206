@@ -1,6 +1,6 @@
 # Qualite_dev
 Membres :
-- AKLOUF Imadeddine (205)
+- Imadeddine AKLOUF (205)
 - Alexandre GUELY (205)
-- Ethan Mebaley Kahel(205)
-- Tanim Veer (206)
+- Ethan MEBALEY KAHEL (205)
+- Tanim VEER (206)

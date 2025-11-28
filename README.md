@@ -19,6 +19,8 @@ Entités :
 
 ```text
 src/
+├── app/
+|   └── Appli.java
 └── chess/
     ├── model/
     │   ├── board/
@@ -37,7 +39,5 @@ src/
     │   ├── MoveGenerator.java
     │   └── RuleValidator.java
     │
-    ├── service/
-    │   └── GameService.java     # board.playMove(...)
-    │
-    └── Appli.java
+    └── service/
+        └── GameService.java     # board.playMove(...)

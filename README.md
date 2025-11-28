@@ -1,12 +1,12 @@
 # Qualite_dev
-Membres :
+
+## Membres :
 - Imadeddine AKLOUF (205)
 - Alexandre GUELY (205)
 - Ethan MEBALEY KAHEL (205)
 - Tanim VEER (206)
 
-
-# Elements
+## Elements
 Entités :
 - IPiece
 - Square
@@ -14,3 +14,30 @@ Entités :
 - Color
 - Move
 - MoveGenerator
+
+## 📁 Structure du projet
+
+```text
+src/
+└── chess/
+    ├── model/
+    │   ├── board/
+    │   │   ├── Board.java
+    │   │   └── Square.java
+    │   ├── piece/
+    │   │   ├── IPiece.java
+    │   │   ├── King.java
+    │   │   ├── Pawn.java
+    │   │   └── Rook.java
+    │   ├── move/
+    │   │   ├── Move.java
+    │   │   └── Color.java
+    │
+    ├── rules/
+    │   ├── MoveGenerator.java
+    │   └── RuleValidator.java
+    │
+    ├── service/
+    │   └── GameService.java     # board.playMove(...)
+    │
+    └── Appli.java

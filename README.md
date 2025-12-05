@@ -22,22 +22,19 @@ src/
 ├── app/
 |   └── Appli.java
 └── chess/
-    ├── model/
-    │   ├── board/
-    │   │   ├── Board.java
-    │   │   └── Square.java
-    │   ├── piece/
-    │   │   ├── IPiece.java
-    │   │   ├── King.java
-    │   │   ├── Pawn.java
-    │   │   └── Rook.java
-    │   ├── move/
-    │   │   ├── Move.java
-    │   │   └── Color.java
+    ├── businessLayer/
+    │   ├── IPiece.java
+    │   ├── Move.java
+    │   ├── Color.java
+    │   ├──board/
+    │   │   Board.java
+    │   │   Square.java
+    │   └── piece/
+    │       ├── King.java
+    │       └── Rook.java
+    │      
+    ├── useCases/
+    │   └── MoveGenerator.java
     │
-    ├── rules/
-    │   ├── MoveGenerator.java
-    │   └── RuleValidator.java
-    │
-    └── service/
-        └── GameService.java     # board.playMove(...)
+    └── adaptor/
+        └── UCIEngine.java     # board.playMove(...)

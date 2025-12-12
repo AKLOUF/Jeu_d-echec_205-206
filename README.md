@@ -1,10 +1,10 @@
 # Qualite_dev
 
 ## Membres :
-- Imadeddine AKLOUF (205)
-- Alexandre GUELY (205)
-- Ethan MEBALEY KAHEL (205)
-- Tanim VEER (206)
+- Imadeddine AKLOUF (Groupe :205)
+- Alexandre GUELY (Groupe :205)
+- Ethan MEBALEY KAHEL (Groupe :205)
+- Tanim VEER (Groupe :206)
 
 ## Elements
 Entités :

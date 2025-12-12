@@ -33,7 +33,7 @@ public class Board {
                     case PieceType.ROOK -> 'r';
                 };
 
-                System.out.print("{" + p + "}");
+                System.out.print("[" + p + "]");
                 if(y == BOARD_SIZE - 1) System.out.println("");
             }
         }

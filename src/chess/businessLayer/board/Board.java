@@ -17,7 +17,7 @@ public class Board {
             }
         }
 
-        tableau[2][5].setPiece(new King(Color.BLACK));
+        tableau[2][5].setPiece(new King(Color.BLACK));  //Place un roi noir sur la case (2,5) 
     }
 
     public void afficheTableau() {

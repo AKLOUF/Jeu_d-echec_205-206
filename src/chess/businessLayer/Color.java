@@ -1,4 +1,4 @@
-package chess.model.move;
+package chess.businesslayer;
 
 public enum Color{
     BLACK,

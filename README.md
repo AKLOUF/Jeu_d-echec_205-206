@@ -19,10 +19,13 @@ Entités :
 
 ```text
 src/
-├── app/
-|   └── Appli.java
+├── Appli.java
+|
 └── chess/
-    ├── businessLayer/
+    ├── adaptor/
+    │   └── UCIEngine.java     # board.playMove(...)
+    │
+    ├── businesslayer/
     │   ├── IPiece.java
     │   ├── Move.java
     │   ├── Color.java
@@ -34,7 +37,4 @@ src/
     │       └── Rook.java
     │      
     ├── useCases/
-    │   └── MoveGenerator.java
-    │
-    └── adaptor/
-        └── UCIEngine.java     # board.playMove(...)
+        └── MoveGenerator.java

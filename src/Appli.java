@@ -1,4 +1,3 @@
-
 import chess.businesslayer.board.Board;
 
 public class Appli{

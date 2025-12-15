@@ -1,45 +1,31 @@
 package chess.businessLayer;
 
-import chess.businessLayer.board.Board;
 import chess.businessLayer.board.Position;
-import chess.businesslayer.Color;
-import chess.businesslayer.IPiece;
-import chess.businesslayer.board.Square;
-import chess.businesslayer.piece.PieceType;
-import chess.businesslayer.Color;
 
-import java.util.List;
+public class Move {
+    private final Position start;
+    private final Position end;
 
-public abstract class Piece implements IPiece {
-
-    private final Color color;
-    private Square carre;
-    private final PieceType type;
-
-    public Piece(Color color, PieceType type) {
-        this.color = color;
-        this.type = type;
+    public Move(Position start, Position end){
+        this.end = end;
+        this.start = start;
     }
 
-    @Override
-    public Color getColor() {
-        return color;
+    public Position getStart(){
+        return start;
     }
 
-    public Square getSquare() {
-        return carre;
+    public Position getEnd(){
+        return end;
     }
 
-    @Override
-    public PieceType getType(){
-        return type;
+    public String toUCI() {
+        return toAlg(start) + toAlg(end);
     }
 
-    @Override
-    public void setSquare(Square square) {
-        this.carre = square;
+    private String toAlg(Position p) {
+        char col = (char)('a' + p.x);
+        char row = (char)('1' + p.y);
+        return "" + col + row;
     }
-
-    // C'est ici que la magie opère : chaque pièce devra définir comment elle bouge
-    public abstract List<Position> getPseudoLegalMoves(Position currentPos, Board board);
 }

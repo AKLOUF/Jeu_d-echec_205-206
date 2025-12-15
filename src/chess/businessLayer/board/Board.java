@@ -1,8 +1,6 @@
 package chess.businesslayer.board;
 
-import chess.businesslayer.Color;
 import chess.businesslayer.IPiece;
-import chess.businesslayer.piece.King;
 import chess.businesslayer.piece.PieceType;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,8 +16,6 @@ public class Board {
                 tableau.put(new Position(x,y), new Square(null));
             }
         }
-
-        tableau.get(new Position(2,5)).setPiece(new King(Color.BLACK));
     }
 
     public void afficheTableau() {

@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 public class UCIEngine {
 
-    // Change "new RandomStrategy()" si tu veux le mode aléatoire
-    private IBotStrategy bot = new BotStrategy();
+    // Change "RandomStrategy()" ou "BotStrategy()"
+    private IBotStrategy bot = new RandomStrategy();
 
     private Board board;
 

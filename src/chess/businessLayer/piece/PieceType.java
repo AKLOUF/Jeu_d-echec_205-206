@@ -1,4 +1,5 @@
-package chess.businesslayer.piece;
+
+package chess.businessLayer.piece;
 
 public enum PieceType {
     KING,

@@ -6,6 +6,9 @@ import chess.businessLayer.Move;
 import chess.businessLayer.piece.PieceType;
 import java.util.HashMap;
 import java.util.Map;
+import chess.businessLayer.piece.King;
+import chess.businessLayer.piece.Rook;
+import chess.businessLayer.piece.Piece;
 
 public class Board {
 
@@ -20,7 +23,6 @@ public class Board {
         for (Map.Entry<Position, Square> entry : original.tableau.entrySet()) {
             Position pos = entry.getKey();
             Square originalSquare = entry.getValue();
-            // On crée un nouveau Square avec la même pièce
             this.tableau.put(pos, new Square(originalSquare.getPiece()));
         }
     }
@@ -67,6 +69,40 @@ public class Board {
         Square s = tableau.get(p);
         if(s != null) {
             s.setPiece(piece);
+        }
+    }
+
+    public void loadFen(String fen) {
+        clear();
+
+        String[] parts = fen.split(" ");
+        String piecePlacement = parts[0];
+
+        int row = 7;
+        int col = 0;
+
+        for (int i = 0; i < piecePlacement.length(); i++) {
+            char c = piecePlacement.charAt(i);
+
+            if (c == '/') {
+                row--;
+                col = 0;
+            } else if (Character.isDigit(c)) {
+                col += Character.getNumericValue(c);
+            } else {
+                Color color = Character.isUpperCase(c) ? Color.WHITE : Color.BLACK;
+                IPiece piece = null;
+
+                switch (Character.toLowerCase(c)) {
+                    case 'k': piece = new King(color); break;
+                    case 'r': piece = new Rook(color); break;
+                }
+
+                if (piece != null) {
+                    putPiece(new Position(col, row), piece);
+                }
+                col++;
+            }
         }
     }
 

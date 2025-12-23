@@ -1,9 +1,8 @@
-package chess.businesslayer.board;
+package chess.businessLayer.board;
 
-import chess.businesslayer.IPiece;
+import chess.businessLayer.IPiece;
 
 public class Square {
-
     IPiece piece;
 
     public Square(IPiece p) {

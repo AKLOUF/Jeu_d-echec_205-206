@@ -1,6 +1,6 @@
-package chess.businesslayer;
+package chess.businessLayer;
 
-public enum Color{
+public enum Color {
     BLACK,
     WHITE
 }

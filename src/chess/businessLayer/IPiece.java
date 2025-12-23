@@ -1,10 +1,7 @@
-package chess.businesslayer;
+package chess.businessLayer;
+import chess.businessLayer.piece.PieceType;
 
-import chess.businesslayer.board.Square;
-import chess.businesslayer.piece.PieceType;
-
-public interface IPiece{
+public interface IPiece {
     Color getColor();
-    void setSquare(Square square);
     PieceType getType();
 }

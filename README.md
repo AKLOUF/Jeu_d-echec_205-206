@@ -103,10 +103,12 @@ src/
 
 ---
 
-## ✅ Tests Unitaires
-Le moteur est validé par des tests unitaires rigoureux (TDD).
-- Total des tests : 5/5 passés. 
-- Couverture : Déplacements libres, blocage par pièces amies, capture de pièces ennemies, gestion des bords du plateau.
+## ✅ Tests Unitaires : 11/11 validés (100%) 
+**Le moteur couvre tous les cas limites :**
+- Déplacements géométriques (Tour/Roi).
+- Gestion des obstacles (Amis/Ennemis).
+
+Règles avancées validées : Interdiction de suicide, gestion du clouage (Pin), et obligation de parer un échec.
 
 --- 
 

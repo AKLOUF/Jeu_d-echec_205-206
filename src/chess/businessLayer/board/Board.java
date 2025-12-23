@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.Map;
 import chess.businessLayer.piece.King;
 import chess.businessLayer.piece.Rook;
-import chess.businessLayer.piece.Piece;
 
 public class Board {
 

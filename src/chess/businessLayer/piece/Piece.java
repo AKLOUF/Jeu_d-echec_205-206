@@ -1,3 +1,5 @@
+package chess.businessLayer.piece;
+
 import chess.businessLayer.Color;
 import chess.businessLayer.IPiece;
 import chess.businessLayer.board.Board;
@@ -25,4 +27,4 @@ public abstract class Piece implements IPiece {
     }
 
     public abstract List<Position> getPseudoLegalMoves(Position currentPos, Board board);
-}
+} 

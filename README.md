@@ -1,4 +1,4 @@
-<img width="2816" height="1536" alt="Gemini_Generated_Image_q3gun4q3gun4q3gu" src="https://github.com/user-attachments/assets/fd0cc165-1842-49bf-a4c9-6de95fe6b5b6" /># Projet R3-04 - Moteur d'Échecs (Finale RKK)
+# Projet R3-04 - Moteur d'Échecs (Finale RKK)
 
 Ce projet implémente un moteur d'échecs capable de jouer une finale **Roi + Tour (Blancs) contre Roi (Noirs)**. Le développement respecte strictement les principes **SOLID** et la **Clean Architecture**.
 
@@ -79,7 +79,7 @@ src/
             └── Rook.java
 ```
 
-
+<img width="1431" height="773" alt="Diagramme archi Groupe 205 206" src="https://github.com/user-attachments/assets/38c1ee67-beb3-4d34-a967-59d4b6f7ed0a" />
 
 ## Description des couches
 

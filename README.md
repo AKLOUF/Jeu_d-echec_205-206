@@ -81,7 +81,7 @@ src/
             └── Rook.java
 ```
 
-<img alt="Diagramme archi Groupe 205 206" src="diagramme_architecture.svg" style="background-color:#fff"/>
+<img alt="Diagramme archi Groupe 205 206" src="diagramme_architecture.svg" style="background-color:#ffffff"/>
 
 ## Description des couches
 

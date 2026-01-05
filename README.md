@@ -10,7 +10,6 @@ Ce projet implémente un moteur d'échecs capable de jouer une finale **Roi + To
 - Ethan MEBALEY KAHEL (205)
 
 ---
-<img width="1919" height="858" alt="image" src="https://github.com/user-attachments/assets/d246e4ce-0317-4f21-b4d4-d17ebf440eca" />
 
 
 ## 🚀 Installation et Exécution
@@ -82,6 +81,9 @@ src/
 ```
 
 <img alt="Diagramme archi Groupe 205 206" src="diagramme_architecture.svg" style="background-color:#ffffff"/>
+<br>
+<img width="1919" height="858" alt="image" src="https://github.com/user-attachments/assets/d246e4ce-0317-4f21-b4d4-d17ebf440eca" />
+
 
 ## Description des couches
 
